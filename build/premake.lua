@@ -11,9 +11,16 @@ project "ProjectTemplate"
 	
    includedirs { "../src/", "../externals/" }
    
-   files {  "../src/**.h"
+	files {  "../src/**.h"
          } 
 	
+	filter "system:windows"
+
+	
+	filter "system:linux"
+
+	filter "system:macosx"
+
 	filter {}
 		 
 	flags { "NoPCH", "FatalWarnings"}
